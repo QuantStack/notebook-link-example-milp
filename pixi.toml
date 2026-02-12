@@ -1,0 +1,17 @@
+[workspace]
+authors = ["AntoinePrv <AntoinePrv@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "notebook-link-example-milp"
+platforms = ["osx-64", "osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[dependencies]
+jupyter = "*"
+xeus-python = ">=0.9"
+nbconvert = "*"
+nbdime = ">=4.0.4"
+mambajs = "*"
+
+[tasks]
+render = "jupyter nbconvert --to notebook --execute"
+lock = "mambajs create-lock .nblink/environment.yml .nblink/nblink-lock.json"
