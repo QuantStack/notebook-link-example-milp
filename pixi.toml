@@ -13,6 +13,8 @@ nbdime = ">=4.0.4"
 mambajs = "*"
 pyscipopt = "*"
 ipywidgets = "*"
+ipycanvas = "*"
+networkx = "*"
 
 [tasks]
 render = "jupyter nbconvert --to notebook --execute"
