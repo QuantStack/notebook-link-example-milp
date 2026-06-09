@@ -11,6 +11,8 @@ xeus-python = ">=0.9"
 nbconvert = "*"
 nbdime = ">=4.0.4"
 mambajs = "*"
+pyscipopt = "*"
+ipywidgets = "*"
 
 [tasks]
 render = "jupyter nbconvert --to notebook --execute"
